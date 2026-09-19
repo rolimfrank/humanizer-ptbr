@@ -1,0 +1,4 @@
+{"case_id": "holdout-01", "variant": "compact", "output": "O sistema reúne solicitações e responsáveis.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "holdout-02", "variant": "compact", "output": "O relatório mostra os pedidos pendentes.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "holdout-03", "variant": "compact", "output": "O desconto é na adesão, não na mensalidade.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "holdout-04", "variant": "compact", "output": "O fornecedor A atende aos sábados; o B, não.", "model": "independent-agent-session", "parameters": {}}

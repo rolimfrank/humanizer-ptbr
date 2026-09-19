@@ -1,0 +1,4 @@
+{"case_id": "holdout-01", "instruction": "Revise a mensagem em tom profissional. Retorne só o texto final.", "operation": "rewrite", "context": {}, "draft": "O sistema reúne solicitações e responsáveis. Essa é a grande virada."}
+{"case_id": "holdout-02", "instruction": "Revise a mensagem em tom profissional. Retorne só o texto final.", "operation": "rewrite", "context": {}, "draft": "O relatório mostra os pedidos pendentes. É isso que faz toda a diferença."}
+{"case_id": "holdout-03", "instruction": "Revise a mensagem em tom profissional. Retorne só o texto final.", "operation": "rewrite", "context": {}, "draft": "O desconto é na adesão, não na mensalidade."}
+{"case_id": "holdout-04", "instruction": "Revise a mensagem em tom profissional. Retorne só o texto final.", "operation": "rewrite", "context": {}, "draft": "O fornecedor A atende aos sábados; o B, não. Essa é a diferença de horário entre eles."}

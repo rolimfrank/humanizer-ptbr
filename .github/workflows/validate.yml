@@ -3,7 +3,7 @@ name: Check package
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [dexter-ptbr]
 
 permissions:
   contents: read
@@ -21,6 +21,10 @@ jobs:
           python-version: "3.12"
       - name: Check package files
         run: python3 scripts/validate-package.py
+      - name: Test evaluation and runtime tools
+        run: python3 -m unittest discover -s tests -v
+      - name: Check evaluation cases
+        run: python3 scripts/evaluate.py validate
       - name: Check skill discovery
         run: npx --yes skills@1.5.20 add . --list
       - name: Check Claude marketplace

@@ -1,0 +1,48 @@
+{"case_id": "ptbr-001", "variant": "compact", "output": "O plano custa R$ 299 por mês, mais R$ 99 por número adicional.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-004", "variant": "compact", "output": "A integração pode reduzir trabalho manual, dependendo da configuração.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-006", "variant": "compact", "output": "O pedido foi cancelado.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-007", "variant": "compact", "output": "Estamos analisando seu pedido.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-020", "variant": "compact", "output": "— Ainda não foi aprovado — respondeu Ana.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-028", "variant": "compact", "output": "PROTOCOLO: ZX-82 | STATUS: PENDENTE", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-031", "variant": "compact", "output": "A mensalidade é de R$ 120, e a implantação custa R$ 200.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-035", "variant": "compact", "output": "Sim, vocês podem acompanhar os retornos pelo painel.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-040", "variant": "compact", "output": "Desculpe, não consegui confirmar a reunião: houve uma falha ao criar o evento.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-045", "variant": "compact", "output": "", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-052", "variant": "compact", "output": "Claro. Qual dia você prefere?", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-056", "variant": "compact", "output": "O plano permite consultar pedidos.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-001", "variant": "full", "output": "O plano custa R$ 299 por mês, mais R$ 99 por número adicional.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-004", "variant": "full", "output": "A integração pode reduzir trabalho manual, dependendo da configuração.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-006", "variant": "full", "output": "O pedido foi cancelado.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-007", "variant": "full", "output": "Estamos analisando seu pedido.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-020", "variant": "full", "output": "— Ainda não foi aprovado — respondeu Ana.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-028", "variant": "full", "output": "PROTOCOLO: ZX-82 | STATUS: PENDENTE", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-031", "variant": "full", "output": "A mensalidade é R$ 120 e a implantação custa R$ 200.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-035", "variant": "full", "output": "Sim, o painel permite acompanhar os retornos.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-040", "variant": "full", "output": "Não consegui confirmar sua reunião: houve uma falha na criação do evento.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-045", "variant": "full", "output": "", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-052", "variant": "full", "output": "Qual dia você prefere?", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-056", "variant": "full", "output": "O plano permite consultar pedidos.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-011", "variant": "compact", "output": "Vou encaminhar seu pedido para análise.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-015", "variant": "compact", "output": "Por favor, informe qual mensagem de erro aparece na tela.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-016", "variant": "compact", "output": "Para entendermos melhor, qual sistema você usa?", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-017", "variant": "compact", "output": "É necessário preencher o formulário.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-018", "variant": "compact", "output": "O diferencial do painel é reunir pedidos e retornos.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-023", "variant": "compact", "output": "Olá, {{nome}}. O valor é ${valor}. Referência: %FIRSTNAME%.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-029", "variant": "compact", "output": "Bah, ficou bom. Só falta conferir o prazo.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-033", "variant": "compact", "output": "Na mensalidade, não. O desconto de 50% vale somente para a implantação.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-037", "variant": "compact", "output": "O suporte funciona de segunda a sexta, das 9h às 18h.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-039", "variant": "compact", "output": "Sinto muito pelo transtorno. O estorno ainda não foi analisado, então não posso confirmar a devolução.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-043", "variant": "compact", "output": "De nada!", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-049", "variant": "compact", "output": "Não, sou um assistente virtual.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-011", "variant": "full", "output": "Vou encaminhar seu pedido para análise.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-015", "variant": "full", "output": "Qual mensagem de erro aparece na tela?", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-016", "variant": "full", "output": "Qual sistema você utiliza?", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-017", "variant": "full", "output": "É necessário preencher o formulário.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-018", "variant": "full", "output": "O painel reúne pedidos e retornos.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-023", "variant": "full", "output": "Olá, {{nome}}. O valor é ${valor}. Referência: %FIRSTNAME%.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-029", "variant": "full", "output": "Bah, ficou bom. Só falta conferir o prazo.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-033", "variant": "full", "output": "O desconto de 50% vale somente para a implantação, não para a mensalidade.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-037", "variant": "full", "output": "O suporte funciona de segunda a sexta, das 9h às 18h.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-039", "variant": "full", "output": "Sinto muito pelo transtorno com essa cobrança. O estorno ainda não foi analisado.", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-043", "variant": "full", "output": "Por nada!", "model": "independent-agent-session", "parameters": {}}
+{"case_id": "ptbr-049", "variant": "full", "output": "Não, sou um assistente virtual.", "model": "independent-agent-session", "parameters": {}}

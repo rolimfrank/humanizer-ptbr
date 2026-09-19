@@ -1,50 +1,43 @@
-# Guide for agents
+# Manutenção do Humanizer PT-BR
 
-This file explains how to change Humanizer without breaking its package or prompt.
+Trabalhar na branch `dexter-ptbr`. A `main` acompanha o original inglês e não recebe
+customizações PT-BR. Não alterar o Dexter Agents neste repositório.
 
-## What this repo contains
+## Fontes de verdade
 
-Humanizer is an agent skill written in Markdown. `SKILL.md` is the prompt that agents read. The repo has no build step.
+- `SKILL.md`: finalidade, modos e núcleo conversacional.
+- `references/pt-br.md`: 25 critérios ligados aos padrões do upstream 3.0.0.
+- `runtime/humanizer-ptbr.txt`: gerado; editar o núcleo no SKILL.md e reconstruir.
+- `evals/cases.jsonl`: situações sintéticas, critérios semânticos e trechos protegidos.
+- `upstream.json`: commit efetivamente revisado, não apenas o mais recente disponível.
 
-Keep the skill portable. Do not write instructions that limit it to one or two agent tools.
+Manter um único SKILL.md na raiz e o loader do plugin em `./`. Não duplicar as regras
+em um segundo prompt mantido à mão. Não adicionar regras de vendas específicas de
+uma empresa à skill geral. Não publicar dados de clientes ou credenciais.
 
-## Key files
+## Alterações
 
-- `SKILL.md` is the source of truth and the repo's only skill file. It contains portable YAML metadata, an account of why AI text sounds the way it does, and numbered patterns grouped in five sections and ordered by strength and frequency.
-- `README.md` explains installation, use, patterns, and version history.
-- `.claude-plugin/plugin.json` describes the Claude plugin and points its skill loader at the root `SKILL.md`.
-- `.claude-plugin/marketplace.json` lets users add this repo as a Claude marketplace.
-- `agents/openai.yaml` holds the display name, short description, and default prompt for OpenAI-compatible agents.
-- `scripts/validate-package.py` checks package files and shared values.
+Preservar fatos, condições, incertezas, objetivos e estados de ações. Exemplos devem
+obedecer às próprias regras: nenhuma fonte, pesquisa, prazo ou implementação inventada.
+Não tratar toda palavra formal ou pontuação como defeito. Preservar construções boas.
 
-## Rules for changes
+Manter a versão em `metadata.version`, plugin, upstream.fork_version e primeira
+entrada do histórico do README. Os números dos critérios ficam na referência, de 1
+a 25; uma mudança de mapeamento exige revisão da documentação e do validador.
 
-Keep `SKILL.md` and `README.md` in sync.
+Quando adaptar atualizações do original, comparar o commit registrado com o novo,
+incorporar apenas mudanças compreendidas e registrar a nova base após avaliação.
+Preservar atribuição e licença original. Usar português claro na documentação.
 
-- **Patterns:** Patterns are numbered from 1 without gaps, strongest and most frequent first. A new tell earns a pattern only when no existing pattern already implies it; prefer folding it into an existing pattern. If you add, remove, or renumber a pattern, update the README tables, the README section title, and every §reference. The validator derives the count from the headings.
-- **Version:** Keep the same version in `SKILL.md` under `metadata.version`, the first README version entry, and `.claude-plugin/plugin.json`. Do not add a top-level `version` field to the skill.
-- **Compatibility:** Keep install and use instructions neutral across agents. Names such as Claude Code, OpenCode, and Codex are examples, not limits.
-- **History:** Add a short README version note for any behavior change or non-obvious fix.
-- **Checks:** Before publishing, run `python3 scripts/validate-package.py`, `npx skills add . --list`, and `claude plugin validate .`.
+## Validação antes de publicar
 
-## Writing style
+Executar `python3 scripts/build-runtime.py --check`, `python3 scripts/validate-package.py`,
+`python3 -m unittest discover -s tests -v`, `python3 scripts/evaluate.py validate`,
+`npx skills add . --list` e `claude plugin validate .`.
+Se um validador externo não estiver disponível, tentar a versão fixada no workflow e
+informar o resultado real; não substituir por uma alegação de validação.
 
-Use Plain Language in code comments, prompts, documentation, descriptions, validation messages, and progress reports.
-
-- Lead with the main point.
-- Use common words and active voice.
-- Keep sentences and paragraphs short.
-- Use one term for the same item.
-- Use `must` for requirements.
-- Use headings, lists, and tables when they help the reader.
-- Remove repeated or unnecessary words.
-- Limit acronyms and explain technical terms.
-- Avoid double negatives.
-- Keep exact identifiers, commands, paths, schema fields, quotations, watched phrases, and behavior-bearing examples.
-- Keep the full technical meaning.
-
-## Editing the skill
-
-- Keep the YAML metadata valid.
-- Treat the prompt below the metadata as the product.
-- Prefer a short, clear instruction over another exception or repeated explanation.
+Em mudanças substanciais, usar sessões independentes para exercícios realistas,
+fornecendo somente as instruções e os dados, sem critérios esperados. Guardar resultados
+e limitações. Não equiparar testes de scripts ou de outro agente a testes no Dexter.
+Não usar checagem de palavras como substituto de avaliação semântica.

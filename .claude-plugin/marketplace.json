@@ -1,18 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
-  "name": "humanizer",
+  "name": "humanizer-ptbr",
   "owner": {
-    "name": "blader",
-    "url": "https://github.com/blader"
+    "name": "Frank Rolim",
+    "url": "https://github.com/frankrolim"
   },
-  "description": "Install Humanizer as a Claude plugin.",
+  "description": "Humanizer PT-BR para conversas e revisão de textos.",
   "plugins": [
     {
-      "name": "humanizer",
+      "name": "humanizer-ptbr",
       "source": "./",
-      "description": "Rewrite AI-sounding text so it reads naturally without changing what it says.",
+      "description": "Escrita natural em PT-BR com preservação de significado.",
       "license": "MIT",
-      "keywords": ["writing", "editing", "humanize", "prose", "style"]
+      "keywords": [
+        "writing",
+        "editing",
+        "pt-br",
+        "chatbot"
+      ]
     }
   ]
 }
